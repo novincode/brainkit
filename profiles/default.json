@@ -1,0 +1,33 @@
+{
+  "schema_version": "1.0",
+  "profile_version": 1,
+  "id": "default",
+  "language": "en",
+  "audience": null,
+  "voice": {
+    "vocabulary": "plain",
+    "directness": "context-dependent",
+    "warmth": "context-dependent",
+    "profanity": "follow brief; do not force",
+    "humor": null
+  },
+  "story": {
+    "prefer": [
+      "concrete events",
+      "earned payoff",
+      "changed understanding"
+    ],
+    "avoid": [
+      "repeated meaning",
+      "invented autobiography",
+      "generic inspirational closure"
+    ]
+  },
+  "visual": {
+    "palette": null,
+    "type": null,
+    "motion": null
+  },
+  "accepted_preferences": [],
+  "proposed_preferences": []
+}

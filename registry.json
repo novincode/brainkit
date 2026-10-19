@@ -1,0 +1,70 @@
+{
+  "schema_version": "1.0",
+  "project_version": "0.1.0",
+  "skills": [
+    {
+      "name": "creator-director",
+      "category": "coordination",
+      "entry": "skills/creator-director/SKILL.md",
+      "output": "Complete creative briefs and scoped handoffs",
+      "status": "starter",
+      "dependencies": []
+    },
+    {
+      "name": "creator-story",
+      "category": "story",
+      "entry": "skills/creator-story/SKILL.md",
+      "output": "Spoken scripts, narrative turns, hooks, payoffs",
+      "status": "starter",
+      "dependencies": []
+    },
+    {
+      "name": "creator-research",
+      "category": "research",
+      "entry": "skills/creator-research/SKILL.md",
+      "output": "Traceable source studies and transfer hypotheses",
+      "status": "starter",
+      "dependencies": []
+    },
+    {
+      "name": "creator-voice",
+      "category": "voice",
+      "entry": "skills/creator-voice/SKILL.md",
+      "output": "Performance direction and controlled auditions",
+      "status": "starter",
+      "dependencies": []
+    },
+    {
+      "name": "creator-visual",
+      "category": "visual",
+      "entry": "skills/creator-visual/SKILL.md",
+      "output": "Storyboards, color, typography, motion plans",
+      "status": "starter",
+      "dependencies": []
+    },
+    {
+      "name": "creator-review",
+      "category": "review",
+      "entry": "skills/creator-review/SKILL.md",
+      "output": "Precise edits and explicit taste feedback",
+      "status": "starter",
+      "dependencies": []
+    },
+    {
+      "name": "creator-measure",
+      "category": "measurement",
+      "entry": "skills/creator-measure/SKILL.md",
+      "output": "Experiments and outcome interpretation",
+      "status": "starter",
+      "dependencies": []
+    },
+    {
+      "name": "creator-maintain",
+      "category": "maintenance",
+      "entry": "skills/creator-maintain/SKILL.md",
+      "output": "Repository changes and skill release discipline",
+      "status": "starter",
+      "dependencies": []
+    }
+  ]
+}

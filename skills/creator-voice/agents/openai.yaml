@@ -1,0 +1,4 @@
+interface:
+  display_name: "Creator Voice"
+  short_description: "Design controlled voice and delivery auditions"
+  default_prompt: "Use $creator-voice to help with this creator task."

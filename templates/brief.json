@@ -1,0 +1,16 @@
+{
+  "schema_version": "1.0",
+  "project_id": "example",
+  "objective": null,
+  "audience": null,
+  "promise": null,
+  "medium": "short-video",
+  "language": "en",
+  "target_seconds": 30,
+  "facts": [],
+  "fiction_allowed": false,
+  "profile_id": null,
+  "profile_version": null,
+  "constraints": [],
+  "unknowns": []
+}

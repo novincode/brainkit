@@ -1,0 +1,4 @@
+interface:
+  display_name: "Creator Review"
+  short_description: "Review creator work and capture taste feedback"
+  default_prompt: "Use $creator-review to help with this creator task."

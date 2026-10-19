@@ -1,0 +1,20 @@
+{
+  "schema_version": "1.0",
+  "project_id": "example",
+  "artifact_version": 1,
+  "profile_id": null,
+  "profile_version": null,
+  "promise": null,
+  "fiction_label": null,
+  "spoken_text": null,
+  "beats": [],
+  "claim_sources": [],
+  "timing": {
+    "status": "estimated",
+    "spoken_words": null,
+    "assumed_wpm": null,
+    "seconds": null
+  },
+  "performance_notes": [],
+  "visual_notes": []
+}

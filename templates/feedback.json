@@ -1,0 +1,19 @@
+{
+  "schema_version": "1.0",
+  "id": "example-feedback",
+  "artifact_id": null,
+  "artifact_version": null,
+  "date": null,
+  "exact_excerpt": null,
+  "preference": null,
+  "reason_verbatim": null,
+  "scope": {
+    "topic": null,
+    "medium": null,
+    "audience": null
+  },
+  "source": "creator-feedback",
+  "confidence": "tentative",
+  "proposed_rule": null,
+  "status": "proposed"
+}

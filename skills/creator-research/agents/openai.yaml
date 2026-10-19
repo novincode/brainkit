@@ -1,0 +1,4 @@
+interface:
+  display_name: "Creator Research"
+  short_description: "Study creator work with traceable evidence"
+  default_prompt: "Use $creator-research to help with this creator task."

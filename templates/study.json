@@ -1,0 +1,25 @@
+{
+  "schema_version": "1.0",
+  "id": "example-study",
+  "source": {
+    "url": null,
+    "creator": null,
+    "title": null,
+    "published_at": null,
+    "retrieved_at": null,
+    "acquisition": null,
+    "rights_notes": null
+  },
+  "inspection": {
+    "modalities": [],
+    "intervals": [],
+    "limitations": []
+  },
+  "observations": [],
+  "interpretations": [],
+  "hypotheses": [],
+  "alternative_explanations": [],
+  "transfer_test": null,
+  "performance_evidence": null,
+  "status": "queued"
+}

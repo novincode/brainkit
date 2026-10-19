@@ -1,0 +1,4 @@
+interface:
+  display_name: "Creator Maintain"
+  short_description: "Extend creator skills with tested boundaries"
+  default_prompt: "Use $creator-maintain to help with this creator task."

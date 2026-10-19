@@ -1,0 +1,18 @@
+{
+  "schema_version": "1.0",
+  "project_id": "example",
+  "artifact_version": 1,
+  "script_version": null,
+  "focal_idea": null,
+  "semantic_colors": {},
+  "type_hierarchy": {},
+  "renderer": null,
+  "shots": [],
+  "render_checks": [
+    "phone-size readability",
+    "speech alignment",
+    "safe areas",
+    "continuous motion"
+  ],
+  "status": "planned"
+}

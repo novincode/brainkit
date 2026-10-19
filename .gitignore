@@ -1,0 +1,21 @@
+# Personal creator data and generated outputs
+/local/
+/dist/
+/work/
+/outputs/
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.mp3
+*.wav
+*.mp4
+*.mov
+*.srt
+*.vtt
+__pycache__/
+*.pyc
+.DS_Store
+.venv/
+node_modules/

@@ -1,0 +1,23 @@
+{
+  "schema_version": "1.0",
+  "id": "example-voice-trial",
+  "status": "planned",
+  "provider": null,
+  "date": null,
+  "model_id": null,
+  "voice_id": null,
+  "script_version": null,
+  "clean_text_sha256": null,
+  "tagged_text_sha256": null,
+  "direction": null,
+  "supported_settings": {},
+  "requested_seed": null,
+  "audio_path": null,
+  "audio_sha256": null,
+  "duration_seconds": null,
+  "cost": null,
+  "blind_label": null,
+  "ratings": {},
+  "retained": null,
+  "reason": null
+}

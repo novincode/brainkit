@@ -1,6 +1,6 @@
 # BrainKit
 
-Repository slug: `brainkit`. Owner: `novincode`. Edition: Codex-built foundation, portable across skill-compatible agents. A separately developed Claude edition should have its own repository and claims; this release contains no unperformed comparison with Claude.
+Repository slug: `brainkit`. Skill namespace: `brainkit-*`. Owner: `novincode`. Edition: Codex-built foundation, portable across skill-compatible agents. A separately developed Claude edition should have its own repository and claims; this release contains no unperformed comparison with Claude.
 
 Positioning: open-source AI creator skills for scripts, visual direction, image/video generation briefs, voiceover, music, sound, and delivery—with explicit creator taste and evidence.
 

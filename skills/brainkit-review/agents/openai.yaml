@@ -1,0 +1,4 @@
+interface:
+  display_name: "BrainKit Review"
+  short_description: "Review creator work and capture taste feedback"
+  default_prompt: "Use $brainkit-review to help with this creator task."

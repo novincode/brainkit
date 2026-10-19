@@ -1,0 +1,4 @@
+interface:
+  display_name: "BrainKit Visual"
+  short_description: "Plan graphics color and motion around story"
+  default_prompt: "Use $brainkit-visual to help with this creator task."

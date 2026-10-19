@@ -2,7 +2,7 @@
 
 ## BrainKit 0.2.0 release preparation
 
-- Nine official skill metadata validations passed after adding `creator-media`.
+- Nine official skill metadata validations passed after adding `brainkit-media`.
 - Project checks passed with 25 behavioral case definitions. These cases are defined, not a completed quality benchmark.
 - All eight installer tests passed with all nine packages included in the independence check.
 - Three editorial cover directions were generated, followed by the final BrainKit banner. The displayed final artwork was inspected for title/subtitle spelling, layout, and composition. No video or audio was generated for this release.
@@ -30,4 +30,4 @@ The smoke-test prompt asked for a 25-second account of losing a first client wit
 
 Source review and targeted text scanning found no copied private source, hard-coded credentials, or personal profile in public files. This is a bounded review, not a comprehensive security audit. The private draft profile remains under ignored `local/` and is excluded from installation.
 
-Publishing status: the foundation was committed locally as `64d83bf`. The authorized `gh repo create creator-skills --public --source=. --remote=origin --push` attempt failed while connecting to api.github.com. An earlier `gh auth status` also reported an invalid local login. No public repository or successful push is claimed. Re-authenticate as needed and retry when the connection works.
+Publishing status: the foundation was committed locally as `64d83bf`. The authorized `gh repo create brainkit --public --source=. --remote=origin --push` attempt failed while connecting to api.github.com. An earlier `gh auth status` also reported an invalid local login. No public repository or successful push is claimed. Re-authenticate as needed and retry when the connection works.

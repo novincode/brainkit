@@ -1,4 +1,0 @@
-interface:
-  display_name: "Creator Director"
-  short_description: "Route briefs into focused creator workflows"
-  default_prompt: "Use $creator-director to help with this creator task."

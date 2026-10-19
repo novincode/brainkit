@@ -1,6 +1,6 @@
 # BrainKit launch package
 
-Public name: **BrainKit**. Intended repository: `novincode/brainkit`. Edition: Codex-built. The local checkout folder retains its original name to preserve existing links. Claude's separately developed version is not part of this repository.
+Public name: **BrainKit**. Published repository: `novincode/brainkit`. Skill namespace: `brainkit-*`. Edition: Codex-built. Claude's separately developed version is not part of this repository.
 
 ## GitHub About and topics
 
@@ -8,17 +8,17 @@ Open-source AI creator skills for Claude Code, Codex, and other agents. Storytel
 
 Suggested topics: `agent-skills`, `claude-code`, `codex`, `content-creation`, `storytelling`, `video-production`, `image-generation`, `voiceover`, `motion-design`, `text-to-speech`, `music-generation`, `prompt-engineering`.
 
-## Publish from the checkout
+## Update from the checkout
 
 ```sh
 python3 tools/validate.py
 python3 -m unittest discover -s tests -v
 gh auth status
-gh repo create novincode/brainkit --public --source=. --remote=origin --push --description 'Open-source AI creator skills for Claude Code, Codex, and other agents. Storytelling, image/video generation, voiceover, motion, music, sound, and creator taste.'
+git push origin main
 gh repo edit novincode/brainkit --add-topic agent-skills --add-topic claude-code --add-topic codex --add-topic content-creation --add-topic storytelling --add-topic video-production --add-topic image-generation --add-topic voiceover --add-topic motion-design --add-topic text-to-speech --add-topic music-generation --add-topic prompt-engineering
 ```
 
-If the repo already exists, inspect it before selecting a remote. Do not overwrite unrelated repositories or force-push. Authentication and network connectivity are prerequisites; preparation is not publication.
+Preserve the existing remote. Do not overwrite unrelated repositories or force-push. Record a successful push before reporting a change as live.
 
 ## Cover and social preview
 

@@ -1,4 +1,0 @@
-interface:
-  display_name: "Creator Story"
-  short_description: "Write direct stories with concrete earned payoffs"
-  default_prompt: "Use $creator-story to help with this creator task."

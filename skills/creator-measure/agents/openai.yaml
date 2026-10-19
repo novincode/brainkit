@@ -1,4 +1,0 @@
-interface:
-  display_name: "Creator Measure"
-  short_description: "Design content experiments and interpret results"
-  default_prompt: "Use $creator-measure to help with this creator task."

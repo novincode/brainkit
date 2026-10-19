@@ -1,0 +1,4 @@
+interface:
+  display_name: "BrainKit Media"
+  short_description: "Direct image video music and sound production"
+  default_prompt: "Use $brainkit-media to plan and produce the media assets for this brief."

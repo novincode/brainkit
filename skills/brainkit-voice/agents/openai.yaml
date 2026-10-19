@@ -1,0 +1,4 @@
+interface:
+  display_name: "BrainKit Voice"
+  short_description: "Design controlled voice and delivery auditions"
+  default_prompt: "Use $brainkit-voice to help with this creator task."

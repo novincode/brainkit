@@ -2,7 +2,7 @@
   <img src="assets/brainkit-cover.png" alt="BrainKit — AI creator skills. Human taste. Story, image, voice, video, and sound." width="100%">
 </p>
 
-# BrainKit — AI Creator Skills
+# BrainKit — AI BrainKit
 
 **Give your AI a production process. Keep your own taste.**
 
@@ -35,42 +35,40 @@ git clone https://github.com/novincode/brainkit.git
 cd brainkit
 
 # One skill for a Claude Code project
-python3 tools/install.py --target /path/to/project/.claude/skills --skill creator-story
+python3 tools/install.py --target /path/to/project/.claude/skills --skill brainkit-story
 
 # The full kit for a Codex project
 python3 tools/install.py --target /path/to/project/.agents/skills --all
 ```
 
-**Publication status:** these are the intended public repository coordinates. Remote installation becomes available after the first successful push; see [validation and launch status](docs/VALIDATION.md). The local installer works from this checkout now.
-
 Use your client's supported skill directory, then refresh discovery as required. The installer refuses existing destinations. Every package includes its own references and license. See [installation and compatibility](docs/INSTALLATION.md).
 
-After publication, the ecosystem installer provides another route:
+Install directly with the ecosystem installer:
 
 ```sh
-npx skills add novincode/brainkit --skill creator-story --agent claude-code
-npx skills add novincode/brainkit --skill creator-media --agent codex
+npx skills add novincode/brainkit --skill brainkit-story --agent claude-code
+npx skills add novincode/brainkit --skill brainkit-media --agent codex
 ```
 
-Remote installation has not yet been live-tested. Without automatic skill discovery, supply the selected SKILL.md and its requested references as context.
+For hosts without automatic skill discovery, supply the selected SKILL.md and its requested references as context.
 
 ## Try it on a real brief
 
 **Write a short**
 
-> Use creator-story. Write three 30-second fictional stories about a designer who keeps changing the font instead of publishing. Plain words. One dry, one warm, one blunt. Separate spoken words from direction.
+> Use brainkit-story. Write three 30-second fictional stories about a designer who keeps changing the font instead of publishing. Plain words. One dry, one warm, one blunt. Separate spoken words from direction.
 
 **Produce the media**
 
-> Use creator-media. Build the selected story into shot briefs, an image-generation brief, a music cue, and a sound plan. Use connected tools where available. Keep the character consistent and inspect actual outputs.
+> Use brainkit-media. Build the selected story into shot briefs, an image-generation brief, a music cue, and a sound plan. Use connected tools where available. Keep the character consistent and inspect actual outputs.
 
 **Find your voice**
 
-> Use creator-voice. Freeze this excerpt and design a small ElevenLabs audition. Compare voice and model separately. Keep clean speech separate from provider tags. Don't choose a winner until we've listened.
+> Use brainkit-voice. Freeze this excerpt and design a small ElevenLabs audition. Compare voice and model separately. Keep clean speech separate from provider tags. Don't choose a winner until we've listened.
 
 **Make it sound like you**
 
-> Use creator-review. Here are the lines I liked and the lines I would never say. Suggest three small preference rules. Test them on a different topic before making them permanent.
+> Use brainkit-review. Here are the lines I liked and the lines I would never say. Suggest three small preference rules. Test them on a different topic before making them permanent.
 
 Start with [six original calibration scripts](examples/calibration/short-scripts.md). Invented events are labeled; bring your real experiences for personal stories.
 
@@ -78,25 +76,23 @@ Start with [six original calibration scripts](examples/calibration/short-scripts
 
 | Skill | Use it for | Output |
 |---|---|---|
-| `creator-director` | A project spanning several crafts | Brief, routing, consistent handoffs |
-| `creator-story` | Scripts, hooks, scenes, explainers, essays | Spoken script and meaningful beats |
-| `creator-research` | Studying creators and sources | Evidence-linked observations and transfer tests |
-| `creator-voice` | Voiceover and expressive TTS | Clean/tagged text and audition record |
-| `creator-visual` | Thumbnails, typography, color, motion | Visual system and storyboard |
-| `creator-media` | Image/video generation, music, sound, edit and delivery | Asset briefs, connected production, inspection |
-| `creator-review` | Revisions and personal taste | Specific edits and scoped preference proposals |
-| `creator-measure` | Content experiments and outcomes | Comparison, uncertainty, next test |
-| `creator-maintain` | Extending this repository | Small changes, evaluations, contracts |
+| `brainkit-director` | A project spanning several crafts | Brief, routing, consistent handoffs |
+| `brainkit-story` | Scripts, hooks, scenes, explainers, essays | Spoken script and meaningful beats |
+| `brainkit-research` | Studying creators and sources | Evidence-linked observations and transfer tests |
+| `brainkit-voice` | Voiceover and expressive TTS | Clean/tagged text and audition record |
+| `brainkit-visual` | Thumbnails, typography, color, motion | Visual system and storyboard |
+| `brainkit-media` | Image/video generation, music, sound, edit and delivery | Asset briefs, connected production, inspection |
+| `brainkit-review` | Revisions and personal taste | Specific edits and scoped preference proposals |
+| `brainkit-measure` | Content experiments and outcomes | Comparison, uncertainty, next test |
+| `brainkit-maintain` | Extending this repository | Small changes, evaluations, contracts |
 
 Install only what you need. The director is optional. A one-line rewrite should not launch a production pipeline.
 
-## What runs—and what needs a tool
+## Production tools
 
 **Included:** instruction skills, craft references, local installation, source-study templates, production contracts, taste profiles, calibration examples, evaluations, and repository checks.
 
-**Uses your host's tools:** actual image/video generation, speech synthesis, music generation, editing, rendering, browsing, listening, and publication. BrainKit does not bundle these services or pretend they are connected. It supplies a usable brief when a required tool is unavailable.
-
-**Still being tested:** creative preference across models, live client discovery, cross-provider production, and effects on audience outcomes. No guaranteed virality, automatic model training, or proven retention uplift is claimed. [See the evidence](docs/VALIDATION.md).
+Connect your preferred tools for image/video generation, speech synthesis, music, editing, rendering, and publication. BrainKit directs those tools through your agent and provides production briefs for each stage.
 
 ## Make it yours
 
@@ -127,7 +123,7 @@ python3 tools/validate.py
 python3 -m unittest discover -s tests -v
 ```
 
-Structural checks verify package boundaries, links, metadata, and installer behavior. Creative quality needs actual work and human evaluation. Bring one reproducible failure, useful example, or small improvement. Include the prompt, relevant skills, result, and why it fell short. See [contributing](CONTRIBUTING.md) and [evaluation](docs/EVALUATION.md).
+Run the checks before submitting a change. Bring a reproducible failure, a useful example, or a focused improvement. Include the prompt, relevant skills, result, and the change you wanted. See [contributing](CONTRIBUTING.md) and [evaluation](docs/EVALUATION.md).
 
 Study mechanisms; respect sources. The public bank contains original annotations and links, not a collection of copied creator scripts. See [reuse policy](THIRD_PARTY.md).
 

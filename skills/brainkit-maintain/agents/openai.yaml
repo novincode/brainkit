@@ -1,0 +1,4 @@
+interface:
+  display_name: "BrainKit Maintain"
+  short_description: "Extend creator skills with tested boundaries"
+  default_prompt: "Use $brainkit-maintain to help with this creator task."

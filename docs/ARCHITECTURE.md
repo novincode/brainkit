@@ -2,7 +2,7 @@
 
 ## Product boundary
 
-Creator Skills is a file-based craft system executed by a host agent. The host supplies model inference, file access, browsing, and optional tools. A SKILL.md is procedural guidance, not a service, a scheduler, a trained model, or a permission boundary. “Engines” mean focused workflows in this release.
+BrainKit is a file-based craft system executed by a host agent. The host supplies model inference, file access, browsing, and optional tools. A SKILL.md is procedural guidance, not a service, a scheduler, a trained model, or a permission boundary. “Engines” mean focused workflows in this release.
 
 Design target: a useful first script within one exchange, followed by optional research and production depth. Broad support comes from a few strong interfaces, not hundreds of roles.
 

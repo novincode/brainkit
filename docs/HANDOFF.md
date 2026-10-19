@@ -2,7 +2,7 @@
 
 ## Current release update
 
-Public name: BrainKit. Intended repository: novincode/brainkit. Version: 0.2.0, Codex-built edition. Includes creator-media for image/video/music/sound/edit/delivery, funding links for novincode, and the editorial cover. Read docs/LAUNCH.md for publication instructions and docs/PRODUCTION.md for actual coverage.
+Public name: BrainKit. Published repository: novincode/brainkit. Version: 0.3.0, Codex-built edition. Includes brainkit-media for image/video/music/sound/edit/delivery, funding links for novincode, and the editorial cover. Read docs/LAUNCH.md for publication instructions and docs/PRODUCTION.md for actual coverage.
 
 ## Goal
 
@@ -10,7 +10,7 @@ Build an open-source creator craft system for strong original stories, recogniza
 
 ## Start
 
-Read `AGENTS.md`, `docs/ARCHITECTURE.md`, `registry.json`, and `docs/ROADMAP.md`. Do not load the whole bank or every skill. Use `creator-maintain` for repo work and a selected craft skill for content.
+Read `AGENTS.md`, `docs/ARCHITECTURE.md`, `registry.json`, and `docs/ROADMAP.md`. Do not load the whole bank or every skill. Use `brainkit-maintain` for repo work and a selected craft skill for content.
 
 ## Implemented
 
@@ -30,13 +30,13 @@ Run the six-script calibration and ask for exact liked/disliked lines. Capture s
 - Full commit/diff archaeology: not done. Public release notes and two proposed PR commits were reviewed; commit feeds/API access failed.
 - Voice generation/listening: not done. No paid API calls, voice winner, or audio quality claim.
 - Behavioral benchmark and live client discovery: not done. See validation log for any bounded smoke test.
-- GitHub publication: requires working authentication/network. The local `gh` session reported invalid authentication during creation. Do not claim a public URL before creation/push succeeds.
+- GitHub repository: published by the owner from Mac Terminal. This agent environment has a separate network restriction; check whether pushes succeed before reporting an update as live.
 
 ## Continue in order
 
 1. Run `python3 tools/validate.py` and `python3 -m unittest discover -s tests`.
 2. Check `docs/VALIDATION.md` and Git state for current test/commit status.
-3. Use already-authorized GitHub publishing once authentication works; documented command is in installation instructions.
+3. Push committed changes to the existing origin/main when network access permits; never recreate the repository.
 4. Calibrate taste; run real held-out script comparisons; preserve raw results privately.
 5. Inspect a small matched video sample; scale the bank only after annotations are useful.
 6. Run a budgeted ElevenLabs audition with available authenticated voices/models.

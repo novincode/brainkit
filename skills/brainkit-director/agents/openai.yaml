@@ -1,0 +1,4 @@
+interface:
+  display_name: "BrainKit Director"
+  short_description: "Route briefs into focused creator workflows"
+  default_prompt: "Use $brainkit-director to help with this creator task."

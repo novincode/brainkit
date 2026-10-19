@@ -1,4 +1,0 @@
-interface:
-  display_name: "Creator Media"
-  short_description: "Direct image video music and sound production"
-  default_prompt: "Use $creator-media to plan and produce the media assets for this brief."

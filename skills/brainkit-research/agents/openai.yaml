@@ -1,0 +1,4 @@
+interface:
+  display_name: "BrainKit Research"
+  short_description: "Study creator work with traceable evidence"
+  default_prompt: "Use $brainkit-research to help with this creator task."

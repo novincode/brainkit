@@ -70,6 +70,8 @@ def validate(root=ROOT):
     errors = []
     registry = json.loads((root / "registry.json").read_text())
     names = [item["name"] for item in registry["skills"]]
+    if any(not name.startswith("brainkit-") for name in names):
+        errors.append("All package names must use the brainkit- namespace")
     if len(names) != len(set(names)):
         errors.append("Duplicate registry name")
     actual = {p.parent.name for p in (root / "skills").glob("*/SKILL.md")}

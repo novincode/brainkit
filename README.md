@@ -1,51 +1,140 @@
-# Creator Skills
+<p align="center">
+  <img src="assets/brainkit-cover.png" alt="BrainKit — AI creator skills. Human taste. Story, image, voice, video, and sound." width="100%">
+</p>
 
-Portable craft skills for making videos people choose to watch—and finish.
+# BrainKit — AI Creator Skills
 
-Start with a real idea. Write a story worth telling. Direct its voice and visuals. Test what worked. Keep the creator's taste across projects.
+**Give your AI a production process. Keep your own taste.**
 
-**Status: 0.1.0 foundation.** Eight usable instruction skills, a local installer, evidence templates, calibration scripts, and evaluation cases. No trained model, proven retention uplift, automatic video analysis, or audio generation is claimed. Viral reach is an outcome to investigate, never a guarantee.
+Open-source skills for **Claude Code, Codex, and other skill-compatible agents**. Turn a brief into a story, direct its images and voice, plan motion and sound, review the result, and carry your preferences into the next project.
 
-## Start here
+Built by [novincode](https://github.com/novincode) with Codex. MIT licensed. No required subscription, bundled model, or API key for the instruction files. Connected generation services may have their own costs.
 
-Requires Python 3.10+ for tooling; using the Markdown instructions needs no runtime or API key.
+[Get started](#get-started) · [Skills](#choose-your-skill) · [Production coverage](docs/PRODUCTION.md) · [Examples](examples/calibration/short-scripts.md) · [Roadmap](docs/ROADMAP.md) · [Contribute](CONTRIBUTING.md)
+
+## What BrainKit does
+
+AI can generate a lot of material. Making the right material—and knowing what to cut—takes a process.
+
+BrainKit gives an agent focused workflows for storytelling, visual communication, media generation, and review. A separate taste profile records what you actually like. A source bank keeps observations distinct from guesses. Small skill packages load references as needed.
+
+- **Stories with somewhere to go:** concrete scenes, changing stakes, earned payoffs, speakable words.
+- **A voice that fits:** clean narration, performance direction, pronunciation checks, controlled TTS auditions.
+- **Images and video with a reason:** composition, reference fidelity, shot logic, continuity, output inspection.
+- **Motion, music, and sound that serve the piece:** meaningful movement, cue sheets, space for dialogue, delivery checks.
+- **Consistency without sameness:** reusable taste rules with scope, evidence, and room to change your mind.
+
+Direct language and profanity are welcome when they fit. So are restraint, silence, and warmth. Originality comes from the material and decisions, not a mandatory tone or a list of forbidden words.
+
+## Get started
+
+Python 3.10+ is needed for local tooling. Reading the skill files needs no Python or API connection.
+
+```sh
+git clone https://github.com/novincode/brainkit.git
+cd brainkit
+
+# One skill for a Claude Code project
+python3 tools/install.py --target /path/to/project/.claude/skills --skill creator-story
+
+# The full kit for a Codex project
+python3 tools/install.py --target /path/to/project/.agents/skills --all
+```
+
+**Publication status:** these are the intended public repository coordinates. Remote installation becomes available after the first successful push; see [validation and launch status](docs/VALIDATION.md). The local installer works from this checkout now.
+
+Use your client's supported skill directory, then refresh discovery as required. The installer refuses existing destinations. Every package includes its own references and license. See [installation and compatibility](docs/INSTALLATION.md).
+
+After publication, the ecosystem installer provides another route:
+
+```sh
+npx skills add novincode/brainkit --skill creator-story --agent claude-code
+npx skills add novincode/brainkit --skill creator-media --agent codex
+```
+
+Remote installation has not yet been live-tested. Without automatic skill discovery, supply the selected SKILL.md and its requested references as context.
+
+## Try it on a real brief
+
+**Write a short**
+
+> Use creator-story. Write three 30-second fictional stories about a designer who keeps changing the font instead of publishing. Plain words. One dry, one warm, one blunt. Separate spoken words from direction.
+
+**Produce the media**
+
+> Use creator-media. Build the selected story into shot briefs, an image-generation brief, a music cue, and a sound plan. Use connected tools where available. Keep the character consistent and inspect actual outputs.
+
+**Find your voice**
+
+> Use creator-voice. Freeze this excerpt and design a small ElevenLabs audition. Compare voice and model separately. Keep clean speech separate from provider tags. Don't choose a winner until we've listened.
+
+**Make it sound like you**
+
+> Use creator-review. Here are the lines I liked and the lines I would never say. Suggest three small preference rules. Test them on a different topic before making them permanent.
+
+Start with [six original calibration scripts](examples/calibration/short-scripts.md). Invented events are labeled; bring your real experiences for personal stories.
+
+## Choose your skill
+
+| Skill | Use it for | Output |
+|---|---|---|
+| `creator-director` | A project spanning several crafts | Brief, routing, consistent handoffs |
+| `creator-story` | Scripts, hooks, scenes, explainers, essays | Spoken script and meaningful beats |
+| `creator-research` | Studying creators and sources | Evidence-linked observations and transfer tests |
+| `creator-voice` | Voiceover and expressive TTS | Clean/tagged text and audition record |
+| `creator-visual` | Thumbnails, typography, color, motion | Visual system and storyboard |
+| `creator-media` | Image/video generation, music, sound, edit and delivery | Asset briefs, connected production, inspection |
+| `creator-review` | Revisions and personal taste | Specific edits and scoped preference proposals |
+| `creator-measure` | Content experiments and outcomes | Comparison, uncertainty, next test |
+| `creator-maintain` | Extending this repository | Small changes, evaluations, contracts |
+
+Install only what you need. The director is optional. A one-line rewrite should not launch a production pipeline.
+
+## What runs—and what needs a tool
+
+**Included:** instruction skills, craft references, local installation, source-study templates, production contracts, taste profiles, calibration examples, evaluations, and repository checks.
+
+**Uses your host's tools:** actual image/video generation, speech synthesis, music generation, editing, rendering, browsing, listening, and publication. BrainKit does not bundle these services or pretend they are connected. It supplies a usable brief when a required tool is unavailable.
+
+**Still being tested:** creative preference across models, live client discovery, cross-provider production, and effects on audience outcomes. No guaranteed virality, automatic model training, or proven retention uplift is claimed. [See the evidence](docs/VALIDATION.md).
+
+## Make it yours
+
+Copy [the neutral profile](profiles/default.json) to `local/profiles/me.json`. Pass its path or relevant fields explicitly. Record exact feedback with [the feedback template](templates/feedback.json).
+
+Keep raw transcripts, voice trials, personal stories, credentials, and private profiles in ignored `local/`. They are excluded from installation. Preferences stay explicit and reversible; they do not train model weights.
+
+## Built to extend
+
+BrainKit follows the [Agent Skills format](https://agentskills.io/specification): concise SKILL.md entries with directly linked references. No required server, custom package manager, startup hooks, or hidden paid calls.
+
+| Directory | Purpose |
+|---|---|
+| `skills/` | Standalone installable craft packages |
+| `bank/` | Source-linked studies and reusable hypotheses |
+| `profiles/` | Public neutral profile templates |
+| `templates/` | Brief, script, study, voice, visual, feedback, experiment records |
+| `evals/` | Positive, negative, edge, and adversarial task cases |
+| `tools/` and `tests/` | Installation and structural checks |
+| `docs/` | Architecture, research, production scope, roadmap, handoff |
+
+Read the [architecture](docs/ARCHITECTURE.md), [research](docs/RESEARCH.md), [production map](docs/PRODUCTION.md), and [maintainer handoff](docs/HANDOFF.md). Add depth as a reference before adding another expert persona.
+
+## Development and contributions
 
 ```sh
 python3 tools/validate.py
-python3 tools/install.py --target /path/to/your/project/.claude/skills --skill creator-story
+python3 -m unittest discover -s tests -v
 ```
 
-For Codex, use your client's supported skill directory, commonly `.agents/skills`. Restart or refresh discovery as your client requires. Each installed skill includes its own references; it does not depend on the repo remaining beside it.
+Structural checks verify package boundaries, links, metadata, and installer behavior. Creative quality needs actual work and human evaluation. Bring one reproducible failure, useful example, or small improvement. Include the prompt, relevant skills, result, and why it fell short. See [contributing](CONTRIBUTING.md) and [evaluation](docs/EVALUATION.md).
 
-Try: “Use creator-story. Write three 30-second scripts about postponing a creative project. Plain words. One dry, one warm, one blunt. Label invented events as fiction.”
+Study mechanisms; respect sources. The public bank contains original annotations and links, not a collection of copied creator scripts. See [reuse policy](THIRD_PARTY.md).
 
-For the full workflow, install `creator-director` and the craft skills you want. The director can also work alone using its compact fallback. See [installation](docs/INSTALLATION.md).
+## Support BrainKit
 
-## Choose a skill
+If BrainKit helps you make something worth sharing, a star helps others find it. Useful feedback and examples help make it better.
 
-| Skill | Owns | Does not own |
-|---|---|---|
-| `creator-director` | Brief, routing, handoff, consistency | Loading everything by default |
-| `creator-story` | Hooks, scenes, turns, payoffs, spoken scripts | Inventing the creator's life |
-| `creator-research` | Source inspection, annotations, mechanism hypotheses | Pretending metadata is footage |
-| `creator-voice` | Performance direction, model/voice audition design | Declaring a best voice without listening |
-| `creator-visual` | Art direction, color, motion, readable storyboards | Tool-specific rendering APIs |
-| `creator-review` | Useful edits and explicit taste feedback | Automatic model training |
-| `creator-measure` | Experiments, outcome interpretation | Promising virality |
-| `creator-maintain` | Adding and improving skills in this repository | Editing user preferences silently |
+[Sponsor novincode on GitHub](https://github.com/sponsors/novincode) · [Buy me a coffee](https://buymeacoffee.com/novincode)
 
-## Architecture
-
-Canonical installable packages live in `skills/`. Human documentation lives in `docs/`. A small registry describes routing; references are loaded only when needed. `bank/` contains source-linked observations and reusable patterns. `evals/` separates behavioral tests from structural validation. `profiles/` provides public templates; personal profiles and raw media belong in ignored `local/`.
-
-Read [architecture and decisions](docs/ARCHITECTURE.md), [roadmap](docs/ROADMAP.md), [research findings](docs/RESEARCH.md), and [Claude handoff](docs/HANDOFF.md).
-
-## Calibrate before adding more prompts
-
-Read [six original short scripts](examples/calibration/short-scripts.md). Choose the lines that sound like you and the ones you would never say. Record exact feedback with [this form](templates/feedback.json). This updates explicit preferences and examples; it does not train model weights.
-
-## Contribute
-
-Bring one reproducible failure, one small fix, and a test that could catch it again. See [CONTRIBUTING.md](CONTRIBUTING.md). New references need provenance. Third-party text is not automatically covered by this project's MIT license; see [THIRD_PARTY.md](THIRD_PARTY.md).
-
-No telemetry. No install hooks. No default paid calls. No required connection to AtomCut, ElevenLabs, or a particular model provider.
+Open source under the [MIT license](LICENSE). No telemetry in the included tooling. External providers and third-party installers follow their own policies.

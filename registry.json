@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "project_version": "0.1.0",
+  "project_version": "0.2.0",
   "skills": [
     {
       "name": "creator-director",
@@ -43,6 +43,14 @@
       "dependencies": []
     },
     {
+      "name": "creator-media",
+      "category": "production",
+      "entry": "skills/creator-media/SKILL.md",
+      "output": "Image/video/music/sound briefs, connected production and inspected delivery",
+      "status": "starter",
+      "dependencies": []
+    },
+    {
       "name": "creator-review",
       "category": "review",
       "entry": "skills/creator-review/SKILL.md",
@@ -66,5 +74,7 @@
       "status": "starter",
       "dependencies": []
     }
-  ]
+  ],
+  "project_name": "BrainKit",
+  "repository": "novincode/brainkit"
 }

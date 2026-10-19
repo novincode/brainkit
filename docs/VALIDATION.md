@@ -1,5 +1,16 @@
 # Validation record
 
+## BrainKit 0.2.0 release preparation
+
+- Nine official skill metadata validations passed after adding `creator-media`.
+- Project checks passed with 25 behavioral case definitions. These cases are defined, not a completed quality benchmark.
+- All eight installer tests passed with all nine packages included in the independence check.
+- Three editorial cover directions were generated, followed by the final BrainKit banner. The displayed final artwork was inspected for title/subtitle spelling, layout, and composition. No video or audio was generated for this release.
+- Funding links, production coverage, contributor templates, and launch instructions were added. Public publication and GitHub social-preview upload remain pending until verified.
+- Current terminal attempts cannot resolve github.com; `gh api user` fails to connect. The earlier authentication diagnostic may be influenced by that network failure. Do not conclude the user's Mac Terminal or another agent has the same restriction.
+
+## Original 0.1.0 baseline
+
 Date: 2026-10-19. This log records performed checks, not expected future results.
 
 | Check | Result | Scope |

@@ -1,5 +1,7 @@
 # Roadmap with release gates
 
+Release-preparation update: BrainKit 0.2.0 adds a media-production workflow, branding, cover artwork, funding configuration, and contributor templates. This is an additive packaging/capability release; it does not claim the taste/research/voice benchmark milestones below have been completed. Those evidence gates remain in force.
+
 These are dependency-ordered milestones, not calendar promises. Finish a small useful loop before expanding the role list.
 
 | Release | Work | Exit evidence |

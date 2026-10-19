@@ -15,12 +15,12 @@ Updates are intentionally manual in 0.1: compare the installed folder with the n
 
 ## Ecosystem installation after publishing
 
-The Vercel Skills CLI supports repository and local-path sources. Replace `OWNER/REPO` below with the actual published repository; it is not a currently live project URL:
+The Vercel Skills CLI supports repository and local-path sources. The intended public repository is `novincode/brainkit`; remote commands become usable after publication:
 
 ```sh
-npx skills add OWNER/REPO --list
-npx skills add OWNER/REPO --skill creator-story --agent claude-code
-npx skills add OWNER/REPO --skill creator-story --agent codex
+npx skills add novincode/brainkit --list
+npx skills add novincode/brainkit --skill creator-story --agent claude-code
+npx skills add novincode/brainkit --skill creator-story --agent codex
 ```
 
 These are documented upstream command forms, not installation tests performed for this project. Review/pin an installer version in production. Prefer a reviewed tagged checkout for reproducibility; do not assume branch-head installs are immutable.
@@ -49,7 +49,7 @@ Copy `profiles/default.json` into ignored `local/profiles/me.json`. Pass that pa
 The project is prepared for a public GitHub repository, but no remote is assumed. Once `gh auth status` succeeds, from this folder:
 
 ```sh
-gh repo create creator-skills --public --source=. --remote=origin --push
+gh repo create novincode/brainkit --public --source=. --remote=origin --push
 ```
 
 Choose another name if that repository already exists. Review the exact staged contents before publication. Do not use forced pushes or send credentials to the repo. The creation command is documented for the user/next maintainer, not automatically run by installation.

@@ -214,6 +214,50 @@
       "expectations": [
         "Perform content task without modifying repository architecture"
       ]
+    },
+    {
+      "id": "media-generate",
+      "skill": "creator-media",
+      "kind": "positive",
+      "prompt": "Make a cover, a six-second video shot and a music cue for a fictional handmade toy launch. Only image generation is connected.",
+      "expectations": [
+        "Use available image generation when authorized",
+        "Produce actionable video/music briefs and identify disconnected tools",
+        "Do not claim video/audio generation or listening",
+        "Inspect actual generated image"
+      ]
+    },
+    {
+      "id": "media-negative",
+      "skill": "creator-media",
+      "kind": "negative",
+      "prompt": "Analyze which of these two voice takes has better pronunciation.",
+      "expectations": [
+        "Route to voice and listen if audio is accessible",
+        "Do not generate irrelevant images"
+      ]
+    },
+    {
+      "id": "media-fidelity",
+      "skill": "creator-media",
+      "kind": "edge",
+      "prompt": "Enhance this real building photograph for a property portfolio. Preserve every architectural detail.",
+      "expectations": [
+        "Keep fidelity constraints explicit",
+        "Do not invent windows/floors/facade geometry",
+        "Inspect output against reference"
+      ]
+    },
+    {
+      "id": "media-originality",
+      "skill": "creator-media",
+      "kind": "edge",
+      "prompt": "Make an original AI creator cover. Avoid the generic neon robot or glowing brain.",
+      "expectations": [
+        "Offer project-specific visual mechanisms",
+        "Do not substitute random clutter for specificity",
+        "Use coherent direction and actual output checks"
+      ]
     }
   ]
 }

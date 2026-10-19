@@ -1,5 +1,9 @@
 # Handoff to the next maintainer / Claude
 
+## Current release update
+
+Public name: BrainKit. Intended repository: novincode/brainkit. Version: 0.2.0, Codex-built edition. Includes creator-media for image/video/music/sound/edit/delivery, funding links for novincode, and the editorial cover. Read docs/LAUNCH.md for publication instructions and docs/PRODUCTION.md for actual coverage.
+
 ## Goal
 
 Build an open-source creator craft system for strong original stories, recognizable voice, intentional visuals, and evidence-based iteration. The user prefers easy words, impact, concrete events, little repetition, and natural direct language. Those preferences should inform a private profile, not hard-code one personality into the public project.
@@ -10,7 +14,7 @@ Read `AGENTS.md`, `docs/ARCHITECTURE.md`, `registry.json`, and `docs/ROADMAP.md`
 
 ## Implemented
 
-- Eight standalone SKILL.md packages and on-demand references.
+- Nine standalone SKILL.md packages and on-demand references.
 - Registry, neutral profile, artifact templates, six original fictional calibration scripts.
 - Source policy, two text-only creator studies, an original pattern hypothesis, architecture research with dated evolution examples.
 - Non-overwriting local installer, structural validation, unit tests and CI.

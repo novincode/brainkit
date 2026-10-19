@@ -9,7 +9,7 @@ Turn the request into the smallest useful creative workflow.
 
 1. Extract viewer, topic, promise, medium, language, duration, known facts, desired action, and constraints. Ask only for missing information that blocks a meaningful draft. State reversible assumptions.
 2. Read only the selected profile's relevant fields if supplied. Apply the current brief before persistent defaults. Keep personal history private.
-3. Choose one next craft task. Route scripts to `creator-story`, evidence work to `creator-research`, spoken performance to `creator-voice`, graphics/motion to `creator-visual`, revisions/taste to `creator-review`, and experiments to `creator-measure`. Invoke only if available; otherwise provide a scoped handoff or use the fallback below. Do not assume sibling package files exist.
+3. Choose one next craft task. Route scripts to `creator-story`, evidence work to `creator-research`, spoken performance to `creator-voice`, graphics/motion to `creator-visual`, image/video/music/sound production and delivery to `creator-media`, revisions/taste to `creator-review`, and experiments to `creator-measure`. Invoke only if available; otherwise provide a scoped handoff or use the fallback below. Do not assume sibling package files exist.
 4. Maintain the same promise, facts, vocabulary, and emotional turn across script, delivery, thumbnail, and shots. Carry only the artifact and relevant constraints to the next stage.
 5. Finish with usable work and the single next decision. Do not turn a short writing request into a long intake or a team simulation.
 

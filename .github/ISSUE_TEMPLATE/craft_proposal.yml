@@ -1,0 +1,18 @@
+name: Propose a craft improvement
+description: Bring a concrete creative failure, example, or workflow improvement.
+title: '[Craft] '
+body:
+  - type: textarea
+    attributes:
+      label: Which task should improve?
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Example and proposed change
+      description: Prefer a small specific change. Link sources and distinguish observation from hypothesis.
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: How would we know it helped?

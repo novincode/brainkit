@@ -1,0 +1,21 @@
+name: Report a failure
+description: A reproducible problem with a skill, installer, or workflow.
+title: '[Bug] '
+body:
+  - type: textarea
+    attributes:
+      label: What did you ask for?
+      description: Include a minimal prompt. Remove private material and credentials.
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Expected and actual result
+    validations:
+      required: true
+  - type: input
+    attributes:
+      label: Client, model, and BrainKit Creator version
+  - type: textarea
+    attributes:
+      label: Relevant loaded skills and evidence

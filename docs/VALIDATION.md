@@ -19,4 +19,4 @@ The smoke-test prompt asked for a 25-second account of losing a first client wit
 
 Source review and targeted text scanning found no copied private source, hard-coded credentials, or personal profile in public files. This is a bounded review, not a comprehensive security audit. The private draft profile remains under ignored `local/` and is excluded from installation.
 
-Publishing status: local Git commit is intended as the durable checkpoint. Public remote creation/push is blocked until GitHub authentication and network access work. Check actual Git state; do not infer a successful push from these instructions.
+Publishing status: the foundation was committed locally as `64d83bf`. The authorized `gh repo create creator-skills --public --source=. --remote=origin --push` attempt failed while connecting to api.github.com. An earlier `gh auth status` also reported an invalid local login. No public repository or successful push is claimed. Re-authenticate as needed and retry when the connection works.
